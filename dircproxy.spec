@@ -38,7 +38,7 @@ zdarzenia i kiedy siê pod³±czasz pokazuje ci co straci³e¶.
 %build
 rm -f missing
 %{__libtoolize}
-aclocal
+%{__aclocal}
 %{__autoconf}
 %{__automake}
 %configure \
