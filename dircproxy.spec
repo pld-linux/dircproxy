@@ -7,8 +7,9 @@ License:	GPL
 Group:		Applications/Communications
 Group(de):	Applikationen/Kommunikation
 Group(pl):	Aplikacje/Komunikacja
-URL:		http://dircproxy.sourceforge.net/
 Source0:	http://download.sourceforge.net/dircproxy/%{name}-%{version}.tar.gz
+URL:		http://dircproxy.sourceforge.net/
+BuildRequires:	autoconf
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -33,7 +34,9 @@ zdarzenia i kiedy siê pod³±czasz pokazuje ci co straci³e¶.
 %setup -q
 
 %build
-%configure2_13
+autoconf
+%configure \
+	--enable-poll
 %{__make}
 
 %install
