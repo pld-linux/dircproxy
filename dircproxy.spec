@@ -38,16 +38,18 @@ zdarzenia i kiedy siê pod³±czasz pokazuje ci co straci³e¶.
 
 %install
 rm -rf $RPM_BUILD_ROOT
+
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
-gzip -9nf AUTHORS ChangeLog FAQ INSTALL NEWS PROTOCOL README* TODO
+
+gzip -9nf AUTHORS ChangeLog FAQ NEWS PROTOCOL README* TODO
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+%doc *.gz
 %attr(755,root,root) %{_bindir}/*
 %dir %{_datadir}/dircproxy/
 %{_datadir}/dircproxy/*
 %{_mandir}/man?/*
-%doc *.gz
