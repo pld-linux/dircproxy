@@ -32,7 +32,7 @@ zdarzenia i kiedy siê pod³±czasz pokazuje ci co straci³e¶.
 %setup -q
 
 %build
-autoconf
+%{__autoconf}
 %configure \
 	--enable-poll
 %{__make}
