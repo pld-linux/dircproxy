@@ -1,13 +1,16 @@
 Summary:	irc proxy
 Summary(pl):	proxy irc
 Name:		dircproxy
-Version:	1.0.2
+Version:	1.0.3
 Release:	1
 License:	GPL
 Group:		Applications/Communications
-Source0:	http://download.sourceforge.net/dircproxy/%{name}-%{version}.tar.gz
-URL:		http://dircproxy.sourceforge.net/
+Source0:	ftp://ftp.dircproxy.net/pub/dircproxy/1.0/%{name}-%{version}.tar.gz
+Patch0:		%{name}-ac_fix.patch
+URL:		http://www.dircproxy.net/
 BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -30,9 +33,14 @@ zdarzenia i kiedy siê pod³±czasz pokazuje ci co straci³e¶.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
+rm -f missing
+%{__libtoolize}
+aclocal
 %{__autoconf}
+%{__automake}
 %configure \
 	--enable-poll
 %{__make}
@@ -42,14 +50,12 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
-gzip -9nf AUTHORS ChangeLog FAQ NEWS PROTOCOL README* TODO
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc AUTHORS ChangeLog FAQ NEWS PROTOCOL README* TODO
 %attr(755,root,root) %{_bindir}/*
 %dir %{_datadir}/dircproxy/
 %{_datadir}/dircproxy/*
