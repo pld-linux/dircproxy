@@ -1,7 +1,7 @@
 Summary:	irc proxy
 Summary(pl):	proxy irc
 Name:		dircproxy
-Version:	1.0.3
+Version:	1.0.5
 Release:	1
 License:	GPL
 Group:		Applications/Communications
@@ -55,7 +55,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc AUTHORS ChangeLog FAQ NEWS PROTOCOL README* TODO
+%doc AUTHORS ChangeLog FAQ NEWS PROTOCOL README*
 %attr(755,root,root) %{_bindir}/*
 %dir %{_datadir}/dircproxy/
 %{_datadir}/dircproxy/*
