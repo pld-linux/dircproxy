@@ -2,7 +2,7 @@ Summary:	irc proxy
 Summary(pl):	proxy irc
 Name:		dircproxy
 Version:	1.0.5
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications/Communications
 Source0:	ftp://ftp.dircproxy.net/pub/dircproxy/1.0/%{name}-%{version}.tar.gz
