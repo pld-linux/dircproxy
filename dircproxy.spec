@@ -1,7 +1,7 @@
 Summary:	irc proxy
 Summary(pl):	proxy irc
 Name:		dircproxy
-Version:	1.0.0
+Version:	1.0.1
 Release:	1
 License:	GPL
 Group:		Applications/Communications
@@ -33,7 +33,7 @@ zdarzenia i kiedy siê pod³±czasz pokazuje ci co straci³e¶.
 %setup -q
 
 %build
-%configure
+%configure2_13
 %{__make}
 
 %install
