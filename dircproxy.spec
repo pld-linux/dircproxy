@@ -27,10 +27,10 @@ when you reattach it'll let you know what you missed.
 dircproxy jest serwerem proxy IRC przeznaczonym dla ludzi
 wykorzystuj±cych IRC z kilku ró¿nych komputerów lub programów, ale
 chc±cych zostaæ po³±czonym i widzieæ co stracili gdy byli niedostêpni.
-Pod³±czasz siê do IRC poprzez dircproxy a on trzyma ciebie
-pod³±czonego do serwera nawet je¿eli siê od niego od³±czysz. Je¿eli
-jestes od³±czony loguje kana³y i prywatne wiadomo¶ci jak równie¿ wa¿ne
-zdarzenia i kiedy siê pod³±czasz pokazuje ci co straci³e¶.
+Pod³±czasz siê do IRC poprzez dircproxy a on trzyma ciebie pod³±czonego 
+do serwera nawet je¿eli siê od niego od³±czysz. Je¿eli jeste¶ od³±czony 
+loguje kana³y i prywatne wiadomo¶ci jak równie¿ wa¿ne zdarzenia i kiedy 
+siê pod³±czasz pokazuje ci co straci³e¶.
 
 %prep
 %setup -q
