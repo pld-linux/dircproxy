@@ -6,6 +6,7 @@ Release:	1
 License:	GPL
 Group:		Applications/Communications
 Source0:	ftp://ftp.dircproxy.net/pub/dircproxy/1.0/%{name}-%{version}.tar.gz
+# Source0-md5:	33b92e0f28530a5faa9fea801d1ad807
 Patch0:		%{name}-ac_fix.patch
 URL:		http://www.dircproxy.net/
 BuildRequires:	autoconf
