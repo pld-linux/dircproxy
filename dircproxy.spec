@@ -1,12 +1,25 @@
 Summary:	irc proxy
 Summary(pl):	proxy irc
 Name:		dircproxy
-Version:	1.0.1
+Version:	1.0.2
 Release:	1
 License:	GPL
 Group:		Applications/Communications
+Group(cs):	Aplikace/Komunikace
+Group(da):	Programmer/Kommunikation
 Group(de):	Applikationen/Kommunikation
+Group(es):	Aplicaciones/Comunicaciones
+Group(fr):	Applications/Transmissions
+Group(is):	Forrit/Samskipti
+Group(it):	Applicazioni/Comunicazioni
+Group(ja):	╔╒╔в╔Й╔╠║╪╔╥╔Г╔С/дл©╝
+Group(no):	Applikasjoner/Kommunikasjon
 Group(pl):	Aplikacje/Komunikacja
+Group(pt):	AplicaГУes/ComunicaГУes
+Group(ru):	Приложения/Коммуникации
+Group(sl):	Programi/Komunikacije
+Group(sv):	TillДmpningar/Kommunikation
+Group(uk):	Прикладн╕ Програми/Комун╕кац╕╖
 Source0:	http://download.sourceforge.net/dircproxy/%{name}-%{version}.tar.gz
 URL:		http://dircproxy.sourceforge.net/
 BuildRequires:	autoconf
