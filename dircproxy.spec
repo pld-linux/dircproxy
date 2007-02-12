@@ -1,5 +1,5 @@
 Summary:	irc proxy
-Summary(pl):	proxy irc
+Summary(pl.UTF-8):   proxy irc
 Name:		dircproxy
 Version:	1.0.5
 Release:	2
@@ -23,14 +23,14 @@ even after you detach your client from it. While you're detached, it
 logs channel and private messages as well as important events, and
 when you reattach it'll let you know what you missed.
 
-%description -l pl
+%description -l pl.UTF-8
 dircproxy jest serwerem proxy IRC przeznaczonym dla ludzi
-wykorzystuj±cych IRC z kilku ró¿nych komputerów lub programów, ale
-chc±cych zostaæ po³±czonym i widzieæ co stracili gdy byli niedostêpni.
-Pod³±czasz siê do IRC poprzez dircproxy a on trzyma ciebie pod³±czonego 
-do serwera nawet je¿eli siê od niego od³±czysz. Je¿eli jeste¶ od³±czony 
-loguje kana³y i prywatne wiadomo¶ci jak równie¿ wa¿ne zdarzenia i kiedy 
-siê pod³±czasz pokazuje ci co straci³e¶.
+wykorzystujÄ…cych IRC z kilku rÃ³Å¼nych komputerÃ³w lub programÃ³w, ale
+chcÄ…cych zostaÄ‡ poÅ‚Ä…czonym i widzieÄ‡ co stracili gdy byli niedostÄ™pni.
+PodÅ‚Ä…czasz siÄ™ do IRC poprzez dircproxy a on trzyma ciebie podÅ‚Ä…czonego 
+do serwera nawet jeÅ¼eli siÄ™ od niego odÅ‚Ä…czysz. JeÅ¼eli jesteÅ› odÅ‚Ä…czony 
+loguje kanaÅ‚y i prywatne wiadomoÅ›ci jak rÃ³wnieÅ¼ waÅ¼ne zdarzenia i kiedy 
+siÄ™ podÅ‚Ä…czasz pokazuje ci co straciÅ‚eÅ›.
 
 %prep
 %setup -q
