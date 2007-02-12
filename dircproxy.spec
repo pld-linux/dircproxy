@@ -1,5 +1,5 @@
 Summary:	irc proxy
-Summary(pl.UTF-8):   proxy irc
+Summary(pl.UTF-8):	proxy irc
 Name:		dircproxy
 Version:	1.0.5
 Release:	2
